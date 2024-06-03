@@ -1,10 +1,11 @@
-const Options = () => {
+// eslint-disable-next-line react/prop-types
+const Options = ({ updateFeedback, showReset, onReset }) => {
   return (
     <>
-      <button>Good</button>
-      <button>Neutral</button>
-      <button>Bad</button>
-      <button>Reset</button>
+      <button onClick={() => updateFeedback("good")}>Good</button>
+      <button onClick={() => updateFeedback("neutral")}>Neutral</button>
+      <button onClick={() => updateFeedback("bad")}>Bad</button>
+      {showReset && <button onClick={onReset}>Reset</button>}
     </>
   );
 };

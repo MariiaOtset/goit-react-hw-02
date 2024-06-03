@@ -1,11 +1,12 @@
-const Feedback = () => {
+/* eslint-disable react/prop-types */
+const Feedback = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <>
-      <p>Good: </p>
-      <p>Neutral: </p>
-      <p>Bad: </p>
-      <p>Total: </p>
-      <p>Positive: </p>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>Positive feedback: {positivePercentage}%</p>
     </>
   );
 };

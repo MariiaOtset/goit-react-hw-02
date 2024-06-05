@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const Feedback = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <>
